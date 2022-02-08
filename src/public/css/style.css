@@ -328,11 +328,17 @@ main {
   list-style: none;
 }
 
+#chatForm li {
+  width: 15px;
+  height: 15px;
+}
+
 #chatRoom #chatForm input {
   position: relative;
-
-  width: 83%;
-  height: 100%;
+  bottom: 40px;
+  left: 15px;
+  width: 70%;
+  height: 80%;
   padding: 3px 10px;
 
   letter-spacing: 1px;
