@@ -442,3 +442,7 @@ main {
   display: none;
 }
 
+#controlers__column button{
+  color: white;
+  font-size: 12pt;
+}

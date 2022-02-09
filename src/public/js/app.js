@@ -473,23 +473,90 @@ function handleReverse(){
 }
 
 reverse.addEventListener("click", handleReverse);
-
- 
 //줌인
 const zoomIn1 = document.querySelector("#zoomIn1");
 
 function handleZoomIn1(){
   if(myFace.style.transform === "scale(1)"){
   $("#myFace").css("transform", "scale(1)");
-  }else{
-    $("#myFace").css("transform", "scaleX(-1) scale(1) scaleX(-1) ");
+  }else if(myFace.style.transform === "scale(1.5)"){
+    $("#myFace").css("transform", "scale(1)");
+  }else if(myFace.style.transform === "scale(2)"){
+    $("#myFace").css("transform", "scale(1)");
+  }else if(myFace.style.transform === "scale(2.5)"){
+    $("#myFace").css("transform", "scale(1)");
+  }else {
+    $("#myFace").css("transform", "scaleX(-1) scale(1)");
   }
 }
 
-zoomIn1.addEventListener("click",handleZoomIn1);
+
 
 
 const zoomIn2 = document.querySelector("#zoomIn2");
+
+function handleZoomIn2(){
+  if(myFace.style.transform === "scale(1)"){
+    $("#myFace").css("transform", "scale(1.5)");
+    }else if(myFace.style.transform === "scale(1.5)"){
+      $("#myFace").css("transform", "scale(1.5)");
+    }else if(myFace.style.transform === "scale(2)"){
+      $("#myFace").css("transform", "scale(1.5)");
+    }else if(myFace.style.transform === "scale(2.5)"){
+      $("#myFace").css("transform", "scale(1.5)");
+    }else {
+      $("#myFace").css("transform", "scaleX(-1) scale(1.5)");
+    }
+}
+
+
+
+
+const zoomIn3 = document.querySelector("#zoomIn3");
+
+
+function handleZoomIn3(){
+  if(myFace.style.transform === "scale(1)"){
+    $("#myFace").css("transform", "scale(2)");
+    }else if(myFace.style.transform === "scale(1.5)"){
+      $("#myFace").css("transform", "scale(2)");
+    }else if(myFace.style.transform === "scale(2)"){
+      $("#myFace").css("transform", "scale(2)");
+    }else if(myFace.style.transform === "scale(2.5)"){
+      $("#myFace").css("transform", "scale(2)");
+    }else {
+      $("#myFace").css("transform", "scaleX(-1) scale(2)");
+    }
+}
+
+zoomIn3.addEventListener("click",handleZoomIn3);
+
+
+const zoomIn4 = document.querySelector("#zoomIn4");
+
+function handleZoomIn4(){
+  if(myFace.style.transform === "scale(1)"){
+    $("#myFace").css("transform", "scale(2.5)");
+    }else if(myFace.style.transform === "scale(1.5)"){
+      $("#myFace").css("transform", "scale(2.5)");
+    }else if(myFace.style.transform === "scale(2)"){
+      $("#myFace").css("transform", "scale(2.5)");
+    }else if(myFace.style.transform === "scale(2.5)"){
+      $("#myFace").css("transform", "scale(2.5)");
+    }else {
+      $("#myFace").css("transform", "scaleX(-1) scale(2.5)");
+    }
+}
+
+
+zoomIn1.addEventListener("click",handleZoomIn1);
+zoomIn2.addEventListener("click",handleZoomIn2);
+zoomIn3.addEventListener("click",handleZoomIn3);
+zoomIn4.addEventListener("click",handleZoomIn4);
+ 
+
+
+/* const zoomIn2 = document.querySelector("#zoomIn2");
 
 function handleZoomIn2(){
   const test = myFace.style.transform.includes("-");
@@ -499,36 +566,13 @@ function handleZoomIn2(){
       $("#myFace").css("transform", "scaleX(-1) scale(1.5) scaleX(-1) ");
     }
 }
-
-
 zoomIn2.addEventListener("click",handleZoomIn2);
-
-const zoomIn3 = document.querySelector("#zoomIn3");
-
-
-function handleZoomIn3(){
-  if(myFace.style.transform === "scale(1)"){
-    $("#myFace").css("transform", "scale(2)");
-    }else{
-      $("#myFace").css("transform", "scaleX(-1) scale(2) scaleX(-1)");
-    }
-}
-
-zoomIn3.addEventListener("click",handleZoomIn3);
-
-
-const zoomIn4 = document.querySelector("#zoomIn4");
  
-function handleZoomIn4(){
-  if(myFace.style.transform === "scale(1)"){
-    $("#myFace").css("transform", "scale(2.5)");
-    }else{
-      $("#myFace").css("transform", " scaleX(-1) scale(2.5) scaleX(-1)");
-    }
-}
+includes 사용해서 줌인 해주기 */
 
-zoomIn4.addEventListener("click",handleZoomIn4);
- 
+
+
+
  // 의사표현 
  
   const emoji1 = document.querySelector("#emoji1");
